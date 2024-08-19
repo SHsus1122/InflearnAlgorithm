@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35208.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InflearnAlgorithm", "InflearnAlgorithm\InflearnAlgorithm.csproj", "{82002ED5-0B37-4A3B-99F7-ACEC7829EEAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82002ED5-0B37-4A3B-99F7-ACEC7829EEAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82002ED5-0B37-4A3B-99F7-ACEC7829EEAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82002ED5-0B37-4A3B-99F7-ACEC7829EEAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82002ED5-0B37-4A3B-99F7-ACEC7829EEAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {26E7AA99-328E-4C81-A9FF-A4A8F8B77D64}
+	EndGlobalSection
+EndGlobal
