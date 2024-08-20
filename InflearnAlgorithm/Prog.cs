@@ -7,89 +7,29 @@ namespace InflearnAlgorithm
         public static void Main(string[] args)
         {
             int n = 4;
-            RecursionTest(n);
+            Recursion1_1_2_3.RecursionTest(n);
 
-            double result = GcdTest(100, 20);
+            double result = Recursion1_1_2_3.GcdTest(100, 20);
             Console.WriteLine(result);
 
-            Console.WriteLine(LengthTest("Ddd"));
+            Console.WriteLine(Recursion1_1_2_3.LengthTest("Ddd"));
 
-            PrintChars("strtest");
+            Recursion1_1_2_3.PrintChars("strtest");
             Console.WriteLine();
-            PrintCharsReverse("abc");
-
-            Console.WriteLine();
-
-            PrintInBinary(8);
+            Recursion1_1_2_3.PrintCharsReverse("abc");
 
             Console.WriteLine();
-            Console.WriteLine(SumTest(3, new int[] { 1, 2, 3 }));
-        }
 
-        public static void RecursionTest(int k)
-        {
-            if (k == 0) return;
-            else
-            {
-                Console.WriteLine("Hello");
-                RecursionTest(k - 1);
-            }
-        }
+            Recursion1_1_2_3.PrintInBinary(8);
 
-        public static double GcdTest(int m, int n)
-        {
-            if (m < n)
-            {
-                int tmp = m;
-                m = n;
-                n = tmp;    // Swap m and n
-            }
-            if (m % n == 0) return n;
-            else return GcdTest(n, m % n);
-        }
+            Console.WriteLine();
+            Console.WriteLine("int 배열 {1, 2, 3} 에서 모든 정수의 합 : " + Recursion1_1_2_3.SumTest(3, new int[] { 1, 2, 3 }));
+            Console.WriteLine("int 배열 {1, 2, 3} 에서 정수 3의 위치 : " + Recursion1_1_2_3.Search(new int[] { 1, 2, 3 }, 0, 2, 3));
 
-        public static int LengthTest(string str)
-        {
-            if (str.Equals("")) return 0;
-            else return 1 + LengthTest(str.Substring(1));
-        }
-
-        public static void PrintChars(string str)
-        {
-            if (str.Length == 0) return;
-            else
-            {
-                Console.Write(str[0]);
-                PrintChars(str.Substring(1));
-            }
-        }
-
-        public static void PrintCharsReverse(string str)
-        {
-            if (str.Length == 0) return;
-            else
-            {
-                PrintCharsReverse(str.Substring(1));
-                Console.Write(str[0]);
-            }
-        }
-
-        // 음이 아닌 정수 n을 2진수로 변환하여 출력한다.
-        public static void PrintInBinary(int n)
-        {
-            if (n < 2)
-                Console.WriteLine(n);
-            else
-            {
-                PrintInBinary(n / 2);   // n을 2로 나눈 몫을 먼저 2진수로 변환하여 출력한 후
-                Console.WriteLine(n);   // n을 2로 나눈 나머지를 인쇄한다.
-            }
-        }
-
-        public static int SumTest(int n, int[] data)
-        {
-            if (n <= 0) return 0;
-            else return SumTest(n - 1, data) + data[n - 1];
+            int[] testAry = Enumerable.Range(1, 100).ToArray();
+            int[] tAr = new int[] { 1, 3, 5, 7, 9, 11, 13, 15, 17, 19 };
+            Console.WriteLine("int 배열 {0, ... 100} 에서 정수 50의 위치 : " + 
+                Recursion1_1_2_3.BinarySearch1(testAry, 0, testAry.Length, 50));
         }
     }
 }
