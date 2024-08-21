@@ -36,8 +36,13 @@ namespace InflearnAlgorithm
             Maze.FindMazePath(0,0);
             Console.WriteLine();
             Maze.PrintMaze();
-        }
 
-        
+            Console.WriteLine();
+            Console.WriteLine(CountingCellsInABlob.CountCells(0, 0));
+            Console.WriteLine(CountingCellsInABlob.CountCells(0, 3));
+            Console.WriteLine(CountingCellsInABlob.CountCells(0, 7));
+            Console.WriteLine(CountingCellsInABlob.CountCells(5, 1));
+            Console.WriteLine(CountingCellsInABlob.CountCells(2, 6));
+        }
     }
 }
