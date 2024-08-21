@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 
 namespace InflearnAlgorithm
 {
@@ -28,8 +29,15 @@ namespace InflearnAlgorithm
 
             int[] testAry = Enumerable.Range(1, 100).ToArray();
             int[] tAr = new int[] { 1, 3, 5, 7, 9, 11, 13, 15, 17, 19 };
-            Console.WriteLine("int 배열 {0, ... 100} 에서 정수 50의 위치 : " + 
+            Console.WriteLine("int 배열 {0, ... 100} 에서 정수 50의 위치 : " +
                 Recursion1_1_2_3.BinarySearch1(testAry, 0, testAry.Length, 50));
+
+            Maze.PrintMaze();
+            Maze.FindMazePath(0,0);
+            Console.WriteLine();
+            Maze.PrintMaze();
         }
+
+        
     }
 }
