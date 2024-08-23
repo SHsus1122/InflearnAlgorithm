@@ -43,6 +43,11 @@ namespace InflearnAlgorithm
             Console.WriteLine(CountingCellsInABlob.CountCells(0, 7));
             Console.WriteLine(CountingCellsInABlob.CountCells(5, 1));
             Console.WriteLine(CountingCellsInABlob.CountCells(2, 6));
+            Console.WriteLine();
+
+            NQueensProblem.Queens(0);
+            Console.WriteLine();
+            NQueensProblem.Queens(1);
         }
     }
 }
